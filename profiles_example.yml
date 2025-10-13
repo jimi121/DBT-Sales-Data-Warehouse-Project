@@ -1,0 +1,10 @@
+  outputs:
+    dev:
+      catalog: sales_data_warehouse
+      host: "{{ env_var('DBT_DATABRICKS_HOST') }}"
+      http_path: "{{ env_var('DBT_DATABRICKS_HTTP_PATH') }}"
+      schema: default
+      threads: 1
+      token: "{{ env_var('DBT_DATABRICKS_TOKEN') }}"
+      type: databricks
+  target: dev

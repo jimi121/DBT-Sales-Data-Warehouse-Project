@@ -1,0 +1,5 @@
+logs
+target
+profiles.yml
+dbt_packages
+.env
