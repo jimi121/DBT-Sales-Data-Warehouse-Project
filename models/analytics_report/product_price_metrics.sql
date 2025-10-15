@@ -1,3 +1,5 @@
+{{ config(materialized='view') }}
+
 with base AS (
     SELECT
         f.order_date,
