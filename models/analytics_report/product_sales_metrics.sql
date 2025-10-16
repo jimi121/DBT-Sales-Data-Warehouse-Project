@@ -1,8 +1,4 @@
-{{
-  config(
-    materialized = 'view'
-    )
-}}
+{{ config(materialized='view') }}
 
 WITH base AS (
     SELECT
